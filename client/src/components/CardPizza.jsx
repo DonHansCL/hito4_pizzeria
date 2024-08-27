@@ -1,5 +1,4 @@
-import React from "react";
-
+import { Link } from "react-router-dom";
 
 const CardPizza = ({pizza}) => {
     
@@ -17,7 +16,9 @@ const CardPizza = ({pizza}) => {
             </ul>
             <h4 className="card-text text-center p-1"><strong>Precio: </strong>${pizza.price.toLocaleString()}</h4> 
             <div className="d-flex justify-content-evenly">
+                <Link to="/pizza/p001" className="btn btn-card text-white bg-dark">
                 <button className="btn btn-card text-white bg-dark"><strong>Ver más</strong></button>
+                </Link>
                 <button className="btn btn-card text-white bg-dark"><strong>Añadir</strong> 🛒</button>
             </div>
         </div>
@@ -26,6 +27,13 @@ const CardPizza = ({pizza}) => {
 
 
         
+        
+    )
+}
+
+export default CardPizza;
+
+
             // <div className="card mb-4">
             //     <img src={pizza.img} alt={pizza.name} className="card-img-top rounded mx-auto d-block" />
             //     <div className="card-body">
@@ -43,13 +51,6 @@ const CardPizza = ({pizza}) => {
             //         </div>
             //     </div>
             // </div>
-        
-    )
-}
-
-export default CardPizza;
-
-
 
 
 // <div class="container-fluid">

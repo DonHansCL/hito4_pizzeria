@@ -1,4 +1,3 @@
-import React from 'react'
 // import pizzaCart from '../pizzaCart'
 import { pizzaCart } from '../pizzas'
 import  '../Cart.css'
